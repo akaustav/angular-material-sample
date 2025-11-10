@@ -1,1 +1,22 @@
-<p>header works!</p>
+<mat-toolbar>
+  Angular Material Sample
+
+  <div class="spacer"></div>
+
+  <button mat-icon-button [mat-menu-trigger-for]="themeMenu">
+    <mat-icon>{{ selectedTheme().icon }}</mat-icon>
+  </button>
+
+  <mat-menu #themeMenu="matMenu">
+    @for (theme of getThemes(); track theme.name) {
+    <button
+      [class.selected-theme]="selectedTheme().name === theme.name"
+      mat-menu-item
+      (click)="setTheme(theme.name)"
+    >
+      <mat-icon>{{ theme.icon }}</mat-icon>
+      <span>{{ theme.name | titlecase }}</span>
+    </button>
+    }
+  </mat-menu>
+</mat-toolbar>
