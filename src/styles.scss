@@ -6,6 +6,7 @@ html {
       color: mat.$azure-palette,
       typography: Roboto,
     ),
+    $overrides: (background: light-dark(var(--mat-sys-surface), #24292e))
   );
 }
 
