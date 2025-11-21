@@ -1,0 +1,20 @@
+<div class="banner">
+  <mat-icon
+    class="banner-icon"
+    aria-hidden="false"
+    aria-label="exclamation"
+    fontIcon="error_outline"
+  ></mat-icon>
+  <div class="banner-content">
+    <strong>
+      @if (bannerHeading) {
+      {{ bannerHeading }}
+      } @else { Attention }
+    </strong>
+    <br />
+    @if (bannerContent) {
+    {{ bannerContent }}
+    } @else { This is the default banner component. Please refer to the documentation
+    for more information. }
+  </div>
+</div>

@@ -17,6 +17,7 @@ import {
 } from '@angular/material/expansion';
 import { MatFormField } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
+import { BannerComponent } from '../banner/banner.component';
 
 @Component({
   selector: 'app-home',
@@ -35,6 +36,7 @@ import { MatInput } from '@angular/material/input';
     MatExpansionPanelTitle,
     MatFormField,
     MatInput,
+    BannerComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
